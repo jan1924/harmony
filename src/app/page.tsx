@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="container mx-auto flex flex-col gap-4 md:gap-8 items-center justify-center text-right px-8 py-8 min-h-dvh">
+          <section className="container mx-auto flex flex-col gap-6 md:gap-8 items-center justify-center text-right px-8 py-8 min-h-dvh">
             <div className="flex flex-col gap-2 w-full items-end">
               <div className="flex gap-4 items-center">
                 <p
@@ -129,7 +129,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 w-full items-end">
+            <div className="flex flex-col gap-2 w-full items-end">
               <div className="flex gap-4 items-center">
                 <p
                   className={cn(
@@ -158,7 +158,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 w-full items-end">
+            <div className="flex flex-col gap-2 w-full items-end">
               <div className="flex gap-4 items-center">
                 <p
                   className={cn(
@@ -187,7 +187,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-4 w-full items-end">
+            <div className="flex flex-col gap-2 w-full items-end">
               <div className="flex gap-4 items-center">
                 <p
                   className={cn(
