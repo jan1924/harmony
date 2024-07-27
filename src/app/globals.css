@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.word-tight {
+  word-spacing: 0.1rem;
+}
+.word-normal {
+  word-spacing: 0.25rem;
+}
+.word-wide {
+  word-spacing: 0.5rem;
+}
