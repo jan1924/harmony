@@ -230,7 +230,7 @@ export default function Home() {
           </section>
 
           <section className="container mx-auto relative flex flex-col items-center justify-center text-right min-h-svh px-8 py-8">
-            <div className="absolute top-8 right-4 md:right-8 flex items-center gap-2 justify-end w-full">
+            <div className="absolute top-8 right-4 md:right-8 flex items-center gap-2 justify-end w-full ">
               <Image
                 className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
                 src={"/logo.jpg"}
@@ -265,7 +265,7 @@ export default function Home() {
                 />
                 <p className="text-3xl text-white">HARMONY</p>
               </div>
-              <div className="flex flex-col items-end gap-8 w-full text-white">
+              <div className="flex flex-col items-end gap-8 w-full text-white md:pb-20">
                 <p
                   className={cn(GeSSTwoLight.className, "text-2xl md:text-4xl")}
                 >
