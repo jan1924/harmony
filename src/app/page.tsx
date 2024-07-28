@@ -253,7 +253,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-[url('../../public/placeholder96x192.png')] bg-bottom [background-repeat:repeat-x]">
+          <section className="bg-[url('../../public/DBLogo.png')] bg-bottom [background-repeat:repeat-x]">
             <div className="container mx-auto relative flex flex-col items-center justify-center text-right pb-[192px] px-8 py-8 min-h-svh">
               <div className="flex items-center gap-2 justify-end w-full pb-8">
                 <Image
@@ -276,7 +276,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/placeholder96.png"}
+                        src={"/searchicon.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -293,7 +293,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/placeholder96.png"}
+                        src={"/hospitality.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -310,7 +310,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/placeholder96.png"}
+                        src={"/planning.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -330,7 +330,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/placeholder96.png"}
+                        src={"/design.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -347,7 +347,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/placeholder96.png"}
+                        src={"/mic.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -367,7 +367,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/placeholder96.png"}
+                        src={"/gift.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -384,7 +384,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/placeholder96.png"}
+                        src={"/leaf.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -404,7 +404,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-[#f3f2f0] bg-[url('../../public/placeholder256.png')] bg-center bg-repeat-round [background-size:128px] md:[background-size:256px]">
+          <section className="bg-[#f3f2f0] bg-[url('../../public/bglogo.png')] bg-center bg-repeat-round [background-size:128px] md:[background-size:256px]">
             <div className="container mx-auto relative flex flex-col gap-8 items-center justify-center text-right min-h-svh px-8 py-8">
               <div className="flex justify-center items-center">
                 <p
@@ -419,14 +419,14 @@ export default function Home() {
               <div className="flex justify-evenly md:justify-center md:gap-32 items-center w-full">
                 <Image
                   className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/placeholder96.png"}
+                  src={"/mail.png"}
                   alt="Eye icon"
                   height={96}
                   width={96}
                 />{" "}
                 <Image
                   className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/placeholder96.png"}
+                  src={"/whatsapp.png"}
                   alt="Eye icon"
                   height={96}
                   width={96}
