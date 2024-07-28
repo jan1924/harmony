@@ -41,7 +41,12 @@ export default function Home() {
               height={256}
               width={256}
             />
-            <p className={cn(GeSSTwoLight.className, "text-2xl md:text-4xl")}>
+            <p
+              className={cn(
+                GeSSTwoLight.className,
+                "text-2xl md:text-4xl text-center"
+              )}
+            >
               نغم من الجمال يصنع حدثاً أجمل
             </p>
           </div>
@@ -253,7 +258,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-[url('../../public/DBLogo.png')] bg-bottom [background-repeat:repeat-x]">
+          <section className="bg-[url('../../public/DBLogo.png')] bg-bottom [background-size:128px] md:[background-size:256px] [background-repeat:repeat-x]">
             <div className="container mx-auto relative flex flex-col items-center justify-center text-right pb-[192px] px-8 py-8 min-h-svh">
               <div className="flex items-center gap-2 justify-end w-full pb-8">
                 <Image
