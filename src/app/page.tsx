@@ -16,7 +16,7 @@ export default function Home() {
       <Loader />
 
       {!skipped && (
-        <section className="flex flex-col items-center justify-evenly bg-[url('../../public/bgImage.png')] min-h-dvh pt-8 py-16">
+        <section className="flex flex-col items-center justify-evenly bg-[url('../../public/bgImage.png')] min-h-svh pt-8 py-16">
           <div className="flex items-center gap-4">
             <Image
               className="h-[64px] w-[64px]"
@@ -48,7 +48,7 @@ export default function Home() {
 
       {skipped && (
         <>
-          <section className="flex flex-col items-center justify-between text-right min-h-dvh px-8 py-8">
+          <section className="flex flex-col items-center justify-between text-right min-h-svh px-8 py-8">
             <div className="flex flex-grow flex-col items-center justify-center gap-8 h-full">
               <p
                 className={cn(
@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="container mx-auto flex flex-col gap-6 md:gap-8 items-center justify-center text-right px-8 py-8 min-h-dvh">
+          <section className="container mx-auto flex flex-col gap-6 md:gap-8 items-center justify-center text-right px-8 py-8 min-h-svh">
             <div className="flex flex-col gap-2 w-full items-end">
               <div className="flex gap-4 items-center">
                 <p
@@ -227,7 +227,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="container mx-auto relative flex flex-col items-center justify-center text-right min-h-dvh px-8 py-8">
+          <section className="container mx-auto relative flex flex-col items-center justify-center text-right min-h-svh px-8 py-8">
             <div className="absolute top-8 right-4 md:right-8 flex items-center gap-2 justify-end w-full">
               <Image
                 className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
