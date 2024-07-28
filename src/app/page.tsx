@@ -16,7 +16,7 @@ export default function Home() {
       <Loader />
 
       {!skipped && (
-        <section className="flex flex-col items-center justify-evenly bg-[url('../../public/bgImage.png')] min-h-svh pt-8 py-16">
+        <section className="flex flex-col items-center justify-evenly bg-[#e6e6e6] min-h-svh pt-8 py-16">
           <div className="flex items-center gap-4">
             <Image
               className="h-[64px] w-[64px]"
@@ -27,12 +27,14 @@ export default function Home() {
             />
             <p className="text-5xl md:text-7xl">HARMONY</p>
           </div>
-          <div className="flex flex-col items-center justify-between gap-8">
+          <div
+            onClick={() => setSkipped(true)}
+            className="flex flex-col items-center justify-between gap-8 bg-[url('../../public/bgImage.png')] bg-center bg-contain bg-no-repeat p-8 cursor-pointer"
+          >
             <p className={cn(GeSSTwoLight.className, "text-2xl md:text-4xl")}>
               تعرف على هارموني
             </p>
             <Image
-              onClick={() => setSkipped(true)}
               className="object-contain object-center h-[256px] w-[256px]"
               src={"/LandingLogo.png"}
               alt="Harmony Logo"
