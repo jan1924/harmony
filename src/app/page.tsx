@@ -16,7 +16,7 @@ export default function Home() {
       <Loader />
 
       {!skipped && (
-        <section className="flex flex-col items-center justify-evenly bg-[#e6e6e6] min-h-dvh pt-8 py-16">
+        <section className="flex flex-col items-center justify-evenly bg-[url('../../public/bgImage.png')] min-h-dvh pt-8 py-16">
           <div className="flex items-center gap-4">
             <Image
               className="h-[64px] w-[64px]"
@@ -34,7 +34,7 @@ export default function Home() {
             <Image
               onClick={() => setSkipped(true)}
               className="object-contain object-center h-[256px] w-[256px]"
-              src={"/LandingLogo.jpg"}
+              src={"/LandingLogo.png"}
               alt="Harmony Logo"
               height={256}
               width={256}
@@ -90,7 +90,7 @@ export default function Home() {
                 هارموني لـ يكنّ حيث يُصنع الإبداع
               </p>
               <Image
-                src={"/placeholder256.png"}
+                src={"/blueLogo.png"}
                 alt="Harmony logo"
                 height={256}
                 width={256}
@@ -111,7 +111,7 @@ export default function Home() {
                 </p>
                 <Image
                   className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/placeholder96.png"}
+                  src={"/eyesIcon.png"}
                   alt="Eye icon"
                   height={96}
                   width={96}
@@ -141,7 +141,7 @@ export default function Home() {
                 </p>
                 <Image
                   className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/placeholder96.png"}
+                  src={"/stick.png"}
                   alt="Eye icon"
                   height={96}
                   width={96}
@@ -170,7 +170,7 @@ export default function Home() {
                 </p>
                 <Image
                   className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/placeholder96.png"}
+                  src={"/handIcon.png"}
                   alt="Eye icon"
                   height={96}
                   width={96}
@@ -199,7 +199,7 @@ export default function Home() {
                 </p>
                 <Image
                   className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/placeholder96.png"}
+                  src={"/corr.png"}
                   alt="Eye icon"
                   height={96}
                   width={96}
