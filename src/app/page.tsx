@@ -250,6 +250,188 @@ export default function Home() {
               </p>
             </div>
           </section>
+
+          <section className="bg-[url('../../public/placeholder96x192.png')] bg-bottom [background-repeat:repeat-x]">
+            <div className="container mx-auto relative flex flex-col items-center justify-center text-right pb-[192px] px-8 py-8 min-h-svh">
+              <div className="flex items-center gap-2 justify-end w-full pb-8">
+                <Image
+                  className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                  src={"/logo.jpg"}
+                  alt=""
+                  height={96}
+                  width={96}
+                />
+                <p className="text-3xl text-white">HARMONY</p>
+              </div>
+              <div className="flex flex-col items-end gap-8 w-full text-white">
+                <p
+                  className={cn(GeSSTwoLight.className, "text-2xl md:text-4xl")}
+                >
+                  خدماتنا الأفضل
+                </p>
+                <div className="flex flex-col gap-8 w-full">
+                  <div className="grid grid-cols-3 gap-4 items-start w-full">
+                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                      <Image
+                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        src={"/placeholder96.png"}
+                        alt="Eye icon"
+                        height={96}
+                        width={96}
+                      />
+                      <p
+                        className={cn(
+                          GeSSTwoLight.className,
+                          "text-xs md:text-lg text-center"
+                        )}
+                      >
+                        اختبار المساحات
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                      <Image
+                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        src={"/placeholder96.png"}
+                        alt="Eye icon"
+                        height={96}
+                        width={96}
+                      />
+                      <p
+                        className={cn(
+                          GeSSTwoLight.className,
+                          "text-xs md:text-lg text-center"
+                        )}
+                      >
+                        الضيافة
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                      <Image
+                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        src={"/placeholder96.png"}
+                        alt="Eye icon"
+                        height={96}
+                        width={96}
+                      />
+                      <p
+                        className={cn(
+                          GeSSTwoLight.className,
+                          "text-xs md:text-lg text-center"
+                        )}
+                      >
+                        التخطيط والإبتكار للحدث
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4 items-start w-full">
+                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                      <Image
+                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        src={"/placeholder96.png"}
+                        alt="Eye icon"
+                        height={96}
+                        width={96}
+                      />
+                      <p
+                        className={cn(
+                          GeSSTwoLight.className,
+                          "text-xs md:text-lg text-center"
+                        )}
+                      >
+                        تصميم وتنسيق الديكور والبوثات والمسارح ومرافق احدث
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                      <Image
+                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        src={"/placeholder96.png"}
+                        alt="Eye icon"
+                        height={96}
+                        width={96}
+                      />
+                      <p
+                        className={cn(
+                          GeSSTwoLight.className,
+                          "text-xs md:text-lg text-center"
+                        )}
+                      >
+                        تجهيز المساحة بالأنظمة الصوتية
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-4 items-start w-full">
+                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                      <Image
+                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        src={"/placeholder96.png"}
+                        alt="Eye icon"
+                        height={96}
+                        width={96}
+                      />
+                      <p
+                        className={cn(
+                          GeSSTwoLight.className,
+                          "text-xs md:text-lg text-center"
+                        )}
+                      >
+                        المطبوعات والهدايا وبطاقات الدعوة
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                      <Image
+                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        src={"/placeholder96.png"}
+                        alt="Eye icon"
+                        height={96}
+                        width={96}
+                      />
+                      <p
+                        className={cn(
+                          GeSSTwoLight.className,
+                          "text-xs md:text-lg text-center"
+                        )}
+                      >
+                        بناء الثيم والهوية البصرية للحدث
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-[#f3f2f0] bg-[url('../../public/placeholder256.png')] bg-center bg-repeat-round [background-size:128px] md:[background-size:256px]">
+            <div className="container mx-auto relative flex flex-col gap-8 items-center justify-center text-right min-h-svh px-8 py-8">
+              <div className="flex justify-center items-center">
+                <p
+                  className={cn(
+                    GeSSTwoLight.className,
+                    "text-2xl md:text-4xl text-center"
+                  )}
+                >
+                  تواصل معنا لنتحدث عن حدثك التالي
+                </p>
+              </div>
+              <div className="flex justify-evenly md:justify-center md:gap-32 items-center w-full">
+                <Image
+                  className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                  src={"/placeholder96.png"}
+                  alt="Eye icon"
+                  height={96}
+                  width={96}
+                />{" "}
+                <Image
+                  className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                  src={"/placeholder96.png"}
+                  alt="Eye icon"
+                  height={96}
+                  width={96}
+                />
+              </div>
+            </div>
+          </section>
         </>
       )}
     </main>
