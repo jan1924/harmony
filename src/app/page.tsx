@@ -16,7 +16,7 @@ export default function Home() {
       <Loader />
 
       {!skipped && (
-        <section className="flex flex-col items-center justify-evenly bg-[url('../../public/bgImage.png')] min-h-svh pt-8 py-16">
+        <section className="flex flex-col items-center justify-evenly bg-[#e6e6e6] min-h-svh pt-8 py-16">
           <div className="flex items-center gap-4">
             <Image
               className="h-[64px] w-[64px]"
@@ -27,12 +27,14 @@ export default function Home() {
             />
             <p className="text-5xl md:text-7xl">HARMONY</p>
           </div>
-          <div className="flex flex-col items-center justify-between gap-8">
+          <div
+            onClick={() => setSkipped(true)}
+            className="flex flex-col items-center justify-between gap-8 bg-[url('../../public/bgImage.png')] bg-center bg-contain bg-no-repeat p-8 cursor-pointer"
+          >
             <p className={cn(GeSSTwoLight.className, "text-2xl md:text-4xl")}>
               تعرف على هارموني
             </p>
             <Image
-              onClick={() => setSkipped(true)}
               className="object-contain object-center h-[256px] w-[256px]"
               src={"/LandingLogo.png"}
               alt="Harmony Logo"
@@ -251,7 +253,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-[url('../../public/DBLogo.png')] bg-bottom [background-repeat:repeat-x]">
+          <section className="bg-[url('../../public/placeholder96x192.png')] bg-bottom [background-repeat:repeat-x]">
             <div className="container mx-auto relative flex flex-col items-center justify-center text-right pb-[192px] px-8 py-8 min-h-svh">
               <div className="flex items-center gap-2 justify-end w-full pb-8">
                 <Image
@@ -274,7 +276,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/searchicon.png"}
+                        src={"/placeholder96.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -291,7 +293,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/hospitality.png"}
+                        src={"/placeholder96.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -308,7 +310,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/planning.png"}
+                        src={"/placeholder96.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -328,7 +330,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/design.png"}
+                        src={"/placeholder96.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -345,7 +347,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/mic.png"}
+                        src={"/placeholder96.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -365,7 +367,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/gift.png"}
+                        src={"/placeholder96.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -382,7 +384,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2 flex-1 items-center justify-center">
                       <Image
                         className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                        src={"/leaf.png"}
+                        src={"/placeholder96.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
@@ -402,7 +404,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-[#f3f2f0] bg-[url('../../public/bglogo.png')] bg-center bg-repeat-round [background-size:128px] md:[background-size:256px]">
+          <section className="bg-[#f3f2f0] bg-[url('../../public/placeholder256.png')] bg-center bg-repeat-round [background-size:128px] md:[background-size:256px]">
             <div className="container mx-auto relative flex flex-col gap-8 items-center justify-center text-right min-h-svh px-8 py-8">
               <div className="flex justify-center items-center">
                 <p
@@ -417,14 +419,14 @@ export default function Home() {
               <div className="flex justify-evenly md:justify-center md:gap-32 items-center w-full">
                 <Image
                   className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/mail.png"}
+                  src={"/placeholder96.png"}
                   alt="Eye icon"
                   height={96}
                   width={96}
                 />{" "}
                 <Image
                   className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/whatsapp.png"}
+                  src={"/placeholder96.png"}
                   alt="Eye icon"
                   height={96}
                   width={96}
