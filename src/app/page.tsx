@@ -5,8 +5,9 @@ import { useState } from "react";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import Loader from "@/components/Loader";
-const GeSSTwoLight = localFont({
-  src: "../../public/fonts/GE_SS_Two_Light.otf",
+import { ArrowDown, Download } from "lucide-react";
+const TajawalRegular = localFont({
+  src: "../../public/fonts/Tajawal_Regular.ttf",
 });
 export default function Home() {
   const [skipped, setSkipped] = useState(false);
@@ -16,7 +17,7 @@ export default function Home() {
       <Loader />
 
       {!skipped && (
-        <section className="flex flex-col items-center justify-evenly bg-[#e6e6e6] min-h-svh pt-8 py-16">
+        <section className="flex flex-col items-center justify-evenly bg-[#e6e6e6] min-h-svh pt-8 py-16 z-30">
           <div className="flex items-center gap-4">
             <Image
               className="h-[64px] w-[64px]"
@@ -31,7 +32,7 @@ export default function Home() {
             onClick={() => setSkipped(true)}
             className="flex flex-col items-center justify-between gap-8 bg-[url('../../public/bgImage.png')] bg-center bg-contain bg-no-repeat p-8 cursor-pointer"
           >
-            <p className={cn(GeSSTwoLight.className, "text-2xl md:text-4xl")}>
+            <p className={cn(TajawalRegular.className, "text-2xl md:text-4xl")}>
               تعرف على هارموني
             </p>
             <Image
@@ -43,7 +44,7 @@ export default function Home() {
             />
             <p
               className={cn(
-                GeSSTwoLight.className,
+                TajawalRegular.className,
                 "text-2xl md:text-4xl text-center"
               )}
             >
@@ -59,7 +60,7 @@ export default function Home() {
             <div className="flex flex-grow flex-col items-center justify-center gap-8 h-full">
               <p
                 className={cn(
-                  GeSSTwoLight.className,
+                  TajawalRegular.className,
                   "text-2xl md:text-4xl text-[#a08e6c] font-semibold"
                 )}
               >
@@ -68,7 +69,7 @@ export default function Home() {
               <div className="flex flex-col gap-4">
                 <p
                   className={cn(
-                    GeSSTwoLight.className,
+                    TajawalRegular.className,
                     "text-white/90 md:text-xl"
                   )}
                 >
@@ -77,20 +78,20 @@ export default function Home() {
                 </p>
                 <p
                   className={cn(
-                    GeSSTwoLight.className,
-                    "text-white/90 md:text-xl"
+                    TajawalRegular.className,
+                    "text-white/90 md:text-xl [direction:rtl]"
                   )}
                 >
                   خبراتنا تصنع لك حدثا أكثر جمالا وابتكارا ، على أيدي شابات
                   سعوديات لطالما كانت صناعة الفعاليات شغفهنّ الأول ، حتى ..
-                  تمكنّ اليوم من إطلاق
+                  تمكنّ اليوم من إطلاق HARMONY COMPANY
                 </p>
               </div>
             </div>
             <div className="flex flex-col w-full gap-4 items-center">
               <p
                 className={cn(
-                  GeSSTwoLight.className,
+                  TajawalRegular.className,
                   "text-2xl md:text-4xl text-center text-[#a08e6c] font-semibold"
                 )}
               >
@@ -110,7 +111,7 @@ export default function Home() {
               <div className="flex gap-4 items-center">
                 <p
                   className={cn(
-                    GeSSTwoLight.className,
+                    TajawalRegular.className,
                     "text-2xl md:text-4xl text-[#a08e6c] font-semibold"
                   )}
                 >
@@ -126,7 +127,7 @@ export default function Home() {
               </div>
               <p
                 className={cn(
-                  GeSSTwoLight.className,
+                  TajawalRegular.className,
                   "text-white/90 tex md:text-xl md:pr-28"
                 )}
               >
@@ -140,7 +141,7 @@ export default function Home() {
               <div className="flex gap-4 items-center">
                 <p
                   className={cn(
-                    GeSSTwoLight.className,
+                    TajawalRegular.className,
                     "text-2xl md:text-4xl text-[#a08e6c] font-semibold"
                   )}
                 >
@@ -156,7 +157,7 @@ export default function Home() {
               </div>
               <p
                 className={cn(
-                  GeSSTwoLight.className,
+                  TajawalRegular.className,
                   "text-white/90 tex md:text-xl md:pr-28"
                 )}
               >
@@ -169,7 +170,7 @@ export default function Home() {
               <div className="flex gap-4 items-center">
                 <p
                   className={cn(
-                    GeSSTwoLight.className,
+                    TajawalRegular.className,
                     "text-2xl md:text-4xl text-[#a08e6c] font-semibold"
                   )}
                 >
@@ -185,7 +186,7 @@ export default function Home() {
               </div>
               <p
                 className={cn(
-                  GeSSTwoLight.className,
+                  TajawalRegular.className,
                   "text-white/90 tex md:text-xl md:pr-28"
                 )}
               >
@@ -198,7 +199,7 @@ export default function Home() {
               <div className="flex gap-4 items-center">
                 <p
                   className={cn(
-                    GeSSTwoLight.className,
+                    TajawalRegular.className,
                     "text-2xl md:text-4xl text-[#a08e6c] font-semibold"
                   )}
                 >
@@ -214,7 +215,7 @@ export default function Home() {
               </div>
               <p
                 className={cn(
-                  GeSSTwoLight.className,
+                  TajawalRegular.className,
                   "text-white/90 tex md:text-xl md:pr-28"
                 )}
               >
@@ -248,17 +249,26 @@ export default function Home() {
               </div>
               <div className="flex flex-col items-center gap-8 justify-center text-[#a08e6c] font-semibold">
                 <p
-                  className={cn(GeSSTwoLight.className, "text-2xl md:text-4xl")}
+                  className={cn(
+                    TajawalRegular.className,
+                    "text-2xl md:text-4xl"
+                  )}
                 >
                   خدماتنا الأفضل
                 </p>
                 <p
-                  className={cn(GeSSTwoLight.className, "text-xl md:text-3xl")}
+                  className={cn(
+                    TajawalRegular.className,
+                    "text-xl md:text-3xl"
+                  )}
                 >
                   فعاليات من صناعة هارموني
                 </p>
                 <p
-                  className={cn(GeSSTwoLight.className, "text-lg md:text-2xl")}
+                  className={cn(
+                    TajawalRegular.className,
+                    "text-lg md:text-2xl"
+                  )}
                 >
                   هارمونيين
                 </p>
@@ -281,34 +291,44 @@ export default function Home() {
               <div className="flex flex-col items-end gap-8 w-full text-white md:pb-20">
                 <p
                   className={cn(
-                    GeSSTwoLight.className,
+                    TajawalRegular.className,
                     "text-2xl md:text-4xl text-[#a08e6c] font-semibold"
                   )}
                 >
                   خدماتنا الأفضل
                 </p>
                 <div className="flex flex-col gap-8 w-full">
-                  <div className="grid grid-cols-3 gap-4 items-start w-full">
-                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                  <div
+                    className={cn(
+                      TajawalRegular.className,
+                      "grid grid-cols-2 md:grid-cols-3 items-center justify-center gap-4 md:gap-8"
+                    )}
+                  >
+                    <div
+                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/searchImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
+                    >
+                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
                       <Image
-                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
                         src={"/searchicon.png"}
                         alt="Eye icon"
                         height={96}
                         width={96}
                       />
                       <p
-                        className={cn(
-                          GeSSTwoLight.className,
-                          "text-xs md:text-lg text-center"
-                        )}
+                        className={
+                          "text-base md:text-xl lg:text-2xl text-end z-10"
+                        }
                       >
                         اختبار المساحات
                       </p>
                     </div>
-                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                    <div
+                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/hospitalityImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
+                    >
+                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
                       <Image
-                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
                         src={"/hospitality.png"}
                         alt="Eye icon"
                         height={96}
@@ -316,16 +336,19 @@ export default function Home() {
                       />
                       <p
                         className={cn(
-                          GeSSTwoLight.className,
-                          "text-xs md:text-lg text-center"
+                          TajawalRegular.className,
+                          "text-base md:text-xl lg:text-2xl text-end z-10"
                         )}
                       >
                         الضيافة
                       </p>
                     </div>
-                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                    <div
+                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/planningImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
+                    >
+                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
                       <Image
-                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
                         src={"/planning.png"}
                         alt="Eye icon"
                         height={96}
@@ -333,19 +356,19 @@ export default function Home() {
                       />
                       <p
                         className={cn(
-                          GeSSTwoLight.className,
-                          "text-xs md:text-lg text-center"
+                          TajawalRegular.className,
+                          "text-base md:text-xl lg:text-2xl text-end z-10"
                         )}
                       >
                         التخطيط والإبتكار للحدث
                       </p>
                     </div>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-4 items-start w-full">
-                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                    <div
+                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/designImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
+                    >
+                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
                       <Image
-                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
                         src={"/design.png"}
                         alt="Eye icon"
                         height={96}
@@ -353,16 +376,19 @@ export default function Home() {
                       />
                       <p
                         className={cn(
-                          GeSSTwoLight.className,
-                          "text-xs md:text-lg text-center"
+                          TajawalRegular.className,
+                          "text-base md:text-xl lg:text-2xl text-end z-10"
                         )}
                       >
                         تصميم وتنسيق الديكور والبوثات والمسارح ومرافق احدث
                       </p>
                     </div>
-                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                    <div
+                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/micImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
+                    >
+                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
                       <Image
-                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
                         src={"/mic.png"}
                         alt="Eye icon"
                         height={96}
@@ -370,19 +396,19 @@ export default function Home() {
                       />
                       <p
                         className={cn(
-                          GeSSTwoLight.className,
-                          "text-xs md:text-lg text-center"
+                          TajawalRegular.className,
+                          "text-base md:text-xl lg:text-2xl text-end z-10"
                         )}
                       >
                         تجهيز المساحة بالأنظمة الصوتية
                       </p>
                     </div>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-4 items-start w-full">
-                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                    <div
+                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/giftImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
+                    >
+                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
                       <Image
-                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
                         src={"/gift.png"}
                         alt="Eye icon"
                         height={96}
@@ -390,16 +416,19 @@ export default function Home() {
                       />
                       <p
                         className={cn(
-                          GeSSTwoLight.className,
-                          "text-xs md:text-lg text-center"
+                          TajawalRegular.className,
+                          "text-base md:text-xl lg:text-2xl text-end z-10"
                         )}
                       >
                         المطبوعات والهدايا وبطاقات الدعوة
                       </p>
                     </div>
-                    <div className="flex flex-col gap-2 flex-1 items-center justify-center">
+                    <div
+                      className={`relative justify-self-center w-1/2 md:w-full col-span-2 md:col-span-1 md:col-start-2 flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/leafImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
+                    >
+                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
                       <Image
-                        className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
                         src={"/leaf.png"}
                         alt="Eye icon"
                         height={96}
@@ -407,8 +436,8 @@ export default function Home() {
                       />
                       <p
                         className={cn(
-                          GeSSTwoLight.className,
-                          "text-xs md:text-lg text-center"
+                          TajawalRegular.className,
+                          "text-base md:text-xl lg:text-2xl text-end z-10"
                         )}
                       >
                         بناء الثيم والهوية البصرية للحدث
@@ -420,12 +449,64 @@ export default function Home() {
             </div>
           </section>
 
+          <section className="container min-h-[200svh] flex flex-col items-center justify-evenly">
+            <div className="flex flex-col gap-4 items-center">
+              <p
+                className={cn(
+                  TajawalRegular.className,
+                  "text-[#a08e6c] text-3xl md:text-4xl text-end z-10"
+                )}
+              >
+                حاب تتعرف علينا أكثر
+              </p>
+              <Download
+                className="h-[96px] w-[96px] md:h-[128px] md:w-[128px]"
+                color="white"
+              />
+            </div>
+            <Image
+              src={"/logo.jpg"}
+              alt="Harmony Logo"
+              height={512}
+              width={512}
+            />
+            <div className="flex flex-col gap-8 text-2xl md:text-4xl">
+              <p
+                className={cn(
+                  TajawalRegular.className,
+                  "text-[#a08e6c] [direction:rtl] z-10"
+                )}
+              >
+                لإبداعك نغمٌ يُصنع من{" "}
+                <span className="text-white">HARMONY</span>
+              </p>
+              <p
+                className={cn(
+                  TajawalRegular.className,
+                  "text-[#a08e6c] [direction:rtl] z-10"
+                )}
+              >
+                في <span className="text-white">HARMONY</span> نؤمن أن كل حدث
+                يستحق أن يكون فريداً, نابضاً بالحياة, ومتناغماً مع رؤينك الخاصة
+              </p>
+              <p
+                className={cn(
+                  TajawalRegular.className,
+                  "text-[#a08e6c] text-center [direction:rtl] z-10"
+                )}
+              >
+                إذا كنت تبحث عن شريك يجلب الإبتكار والجمال إلى مناسبتك, نحن هنا
+                لنحقق ذلك
+              </p>
+            </div>
+          </section>
+
           <section className="bg-[#f3f2f0] bg-[url('../../public/bglogo.png')] bg-center bg-repeat-round [background-size:128px] md:[background-size:256px]">
             <div className="container mx-auto relative flex flex-col gap-8 items-center justify-center text-right min-h-svh px-8 py-8">
               <div className="flex justify-center items-center">
                 <p
                   className={cn(
-                    GeSSTwoLight.className,
+                    TajawalRegular.className,
                     "text-2xl md:text-4xl text-center"
                   )}
                 >
@@ -448,6 +529,71 @@ export default function Home() {
                   width={96}
                 />
               </div>
+              <form
+                className={cn(
+                  TajawalRegular.className,
+                  "flex flex-col justify-between text-nowrap gap-4 text-lg"
+                )}
+                action=""
+              >
+                <div className="flex gap-4">
+                  <input
+                    className="rounded-full px-4 [direction:rtl]"
+                    type="text"
+                  />
+                  <label className="text-end w-1/3" htmlFor="name">
+                    الأسم
+                  </label>
+                </div>
+                <div className="flex gap-4">
+                  <input
+                    className="rounded-full px-4 [direction:rtl]"
+                    type="text"
+                  />
+                  <label className="text-end w-1/3" htmlFor="name">
+                    الجهة
+                  </label>
+                </div>
+                <div className="flex gap-4">
+                  <input
+                    className="rounded-full px-4 [direction:rtl]"
+                    type="text"
+                  />
+                  <label className="text-end w-1/3" htmlFor="name">
+                    نوع المشروع
+                  </label>
+                </div>
+                <div className="flex gap-4">
+                  <input
+                    className="rounded-full px-4 [direction:rtl]"
+                    type="text"
+                  />
+                  <label className="text-end w-1/3" htmlFor="name">
+                    الموضوع
+                  </label>
+                </div>
+                <div className="flex gap-4">
+                  <input
+                    className="rounded-full px-4 [direction:rtl]"
+                    type="text"
+                  />
+                  <label className="text-end w-1/3" htmlFor="name">
+                    رقم التواصل
+                  </label>
+                </div>
+                <div className="flex gap-4">
+                  <input
+                    className="rounded-full px-4 [direction:rtl]"
+                    type="text"
+                  />
+                  <label className="text-end w-1/3" htmlFor="name">
+                    البريد الإلكتروني
+                  </label>
+                </div>
+                <button className="border border-[#f3f2f0] bg-[#fff] hover:bg-[#f3f2f0] rounded-full">
+                  إرسال
+                </button>
+              </form>
             </div>
           </section>
         </>
