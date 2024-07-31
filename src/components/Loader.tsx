@@ -18,7 +18,7 @@ const Loader = () => {
   return (
     <>
       {loading && (
-        <div className="bg-[#bcab91] flex items-center justify-center absolute inset-0 min-h-dvh w-screen pb-8">
+        <div className="bg-[#bcab91] flex items-center justify-center absolute inset-0 min-h-dvh w-screen pb-8 z-40">
           <Image
             className="h-full object-contain"
             src={Logo}
