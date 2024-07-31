@@ -5,12 +5,58 @@ import { useState } from "react";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import Loader from "@/components/Loader";
-import { ArrowDown, Download } from "lucide-react";
+import { ArrowDown, Download, icons } from "lucide-react";
+import Card from "@/components/Card";
 const TajawalRegular = localFont({
   src: "../../public/fonts/Tajawal_Regular.ttf",
 });
 export default function Home() {
   const [skipped, setSkipped] = useState(false);
+
+  const SERVICES = [
+    {
+      id: 1,
+      name: "اختبار المساحات",
+      icon: "/searchicon.png",
+      image: "/searchImage.jpg",
+    },
+    {
+      id: 2,
+      name: "الضيافة",
+      icon: "/hospitality.png",
+      image: "/hospitalityImage.jpg",
+    },
+    {
+      id: 3,
+      name: "التخطيط والإبتكار للحدث",
+      icon: "/planning.png",
+      image: "/planningImage.jpg",
+    },
+    {
+      id: 4,
+      name: "تصميم وتنسيق الديكور والبوثات والمسارح ومرافق احدث",
+      icon: "/design.png",
+      image: "/designImage.jpg",
+    },
+    {
+      id: 5,
+      name: "تجهيز المساحة بالأنظمة الصوتية",
+      icon: "/mic.png",
+      image: "/micImage.jpg",
+    },
+    {
+      id: 6,
+      name: "المطبوعات والهدايا وبطاقات الدعوة",
+      icon: "/gift.png",
+      image: "/giftImage.jpg",
+    },
+    {
+      id: 7,
+      name: "بناء الثيم والهوية البصرية للحدث",
+      icon: "/leaf.png",
+      image: "/leafImage.jpg",
+    },
+  ];
 
   return (
     <main className="h-full flex flex-col gap-8 bg-[#0e1a2f] word-normal">
@@ -304,145 +350,15 @@ export default function Home() {
                       "grid grid-cols-2 md:grid-cols-3 items-center justify-center gap-4 md:gap-8"
                     )}
                   >
-                    <div
-                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/searchImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
-                    >
-                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
-                      <Image
-                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
-                        src={"/searchicon.png"}
-                        alt="Eye icon"
-                        height={96}
-                        width={96}
+                    {SERVICES.map((service) => (
+                      <Card
+                        id={service.id}
+                        key={service.id}
+                        name={service.name}
+                        icon={service.icon}
+                        image={service.image}
                       />
-                      <p
-                        className={
-                          "text-base md:text-xl lg:text-2xl text-end z-10"
-                        }
-                      >
-                        اختبار المساحات
-                      </p>
-                    </div>
-                    <div
-                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/hospitalityImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
-                    >
-                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
-                      <Image
-                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
-                        src={"/hospitality.png"}
-                        alt="Eye icon"
-                        height={96}
-                        width={96}
-                      />
-                      <p
-                        className={cn(
-                          TajawalRegular.className,
-                          "text-base md:text-xl lg:text-2xl text-end z-10"
-                        )}
-                      >
-                        الضيافة
-                      </p>
-                    </div>
-                    <div
-                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/planningImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
-                    >
-                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
-                      <Image
-                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
-                        src={"/planning.png"}
-                        alt="Eye icon"
-                        height={96}
-                        width={96}
-                      />
-                      <p
-                        className={cn(
-                          TajawalRegular.className,
-                          "text-base md:text-xl lg:text-2xl text-end z-10"
-                        )}
-                      >
-                        التخطيط والإبتكار للحدث
-                      </p>
-                    </div>
-                    <div
-                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/designImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
-                    >
-                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
-                      <Image
-                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
-                        src={"/design.png"}
-                        alt="Eye icon"
-                        height={96}
-                        width={96}
-                      />
-                      <p
-                        className={cn(
-                          TajawalRegular.className,
-                          "text-base md:text-xl lg:text-2xl text-end z-10"
-                        )}
-                      >
-                        تصميم وتنسيق الديكور والبوثات والمسارح ومرافق احدث
-                      </p>
-                    </div>
-                    <div
-                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/micImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
-                    >
-                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
-                      <Image
-                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
-                        src={"/mic.png"}
-                        alt="Eye icon"
-                        height={96}
-                        width={96}
-                      />
-                      <p
-                        className={cn(
-                          TajawalRegular.className,
-                          "text-base md:text-xl lg:text-2xl text-end z-10"
-                        )}
-                      >
-                        تجهيز المساحة بالأنظمة الصوتية
-                      </p>
-                    </div>
-                    <div
-                      className={`relative flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/giftImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
-                    >
-                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
-                      <Image
-                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
-                        src={"/gift.png"}
-                        alt="Eye icon"
-                        height={96}
-                        width={96}
-                      />
-                      <p
-                        className={cn(
-                          TajawalRegular.className,
-                          "text-base md:text-xl lg:text-2xl text-end z-10"
-                        )}
-                      >
-                        المطبوعات والهدايا وبطاقات الدعوة
-                      </p>
-                    </div>
-                    <div
-                      className={`relative justify-self-center w-1/2 md:w-full col-span-2 md:col-span-1 md:col-start-2 flex flex-col gap-2 flex-1 items-end justify-start border border-gray-700 rounded-md p-4 md:p-8 shadow-md h-[200px] md:h-[300px] hover:[background-image:url('../../public/leafImage.jpg')] [background-size:95%] hover:[background-size:100%] bg-center group transition-all ease-in-out duration-500`}
-                    >
-                      <div className="absolute inset-0 bg-[#0e1a2f] opacity-0 group-hover:opacity-50"></div>
-                      <Image
-                        className="h-[48px] w-[48px] md:h-[64px] md:w-[64px] lg:h-[96px] lg:w-[96px] z-10"
-                        src={"/leaf.png"}
-                        alt="Eye icon"
-                        height={96}
-                        width={96}
-                      />
-                      <p
-                        className={cn(
-                          TajawalRegular.className,
-                          "text-base md:text-xl lg:text-2xl text-end z-10"
-                        )}
-                      >
-                        بناء الثيم والهوية البصرية للحدث
-                      </p>
-                    </div>
+                    ))}
                   </div>
                 </div>
               </div>
