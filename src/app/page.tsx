@@ -34,18 +34,18 @@ export default function Home() {
             onClick={() => setSkipped(true)}
             className="flex flex-col items-center justify-between gap-8 bg-[url('../../public/bgImage.png')] bg-center bg-contain bg-no-repeat p-8 cursor-pointer"
           >
-            <div className="flex">
+            <div className="flex justify-center items-center">
           
               <Image
               src={"/arrow.png"}
               alt="arrow"
               height={128}
               width={128}
-              className="tranform scale-x-[-1]"
+              className="tranform scale-x-[-1] h-[64px] w-[64px] md:h-[128px] md:w-[128px]"
               />
               
             <Image
-              className="object-contain object-center h-[256px] w-[256px]"
+              className="object-contain object-center h-[128px] w-[128px] md:h-[256px] md:w-[256px]"
               src={"/LandingLogo.png"}
               alt="Harmony Logo"
               height={256}
@@ -57,6 +57,7 @@ export default function Home() {
               alt="arrow"
               height={128}
               width={128}
+              className="h-[64px] w-[64px] md:h-[128px] md:w-[128px]"
               
               />
             </div>
