@@ -46,7 +46,7 @@ export default function Home() {
               
             <Image
               className="object-contain object-center h-[256px] w-[256px]"
-              src={"/LandingLogo.jpg"}
+              src={"/LandingLogo.png"}
               alt="Harmony Logo"
               height={256}
               width={256}
