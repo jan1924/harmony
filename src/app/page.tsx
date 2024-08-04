@@ -281,48 +281,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-[url('../../public/blueLogoOpacity.png')] [background-position-x:0] [background-position-y:0] bg-repeat-round [background-size:128px] md:[background-size:256px]">
-            <div className="container mx-auto relative flex flex-col items-center justify-center text-right min-h-svh px-8 py-8 ">
-              <div className="absolute top-8 right-4 md:right-8 flex items-center gap-2 justify-end w-full ">
-                <Image
-                  className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/logo.jpg"}
-                  alt=""
-                  height={96}
-                  width={96}
-                />
-                <p className="text-3xl text-white">HARMONY</p>
-              </div>
-              <div className="flex flex-col items-center gap-8 justify-center text-[#a08e6c] font-semibold">
-                <p
-                  className={cn(
-                    TajawalRegular.className,
-                    "text-2xl md:text-4xl"
-                  )}
-                >
-                  خدماتنا الأفضل
-                </p>
-                <p
-                  className={cn(
-                    TajawalRegular.className,
-                    "text-xl md:text-3xl"
-                  )}
-                >
-                  فعاليات من صناعة هارموني
-                </p>
-                <p
-                  className={cn(
-                    TajawalRegular.className,
-                    "text-lg md:text-2xl"
-                  )}
-                >
-                  هارمونيين
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section className="bg-[url('../../public/DBLogo.png')] bg-bottom [background-size:128px] md:[background-size:256px] [background-repeat:repeat-x]">
+          <section className=" bg-bottom [background-size:128px] md:[background-size:256px] [background-repeat:repeat-x]">
             <div className="container mx-auto relative flex flex-col items-center justify-center text-right pb-[192px] px-8 py-8 min-h-svh">
               <div className="flex items-center gap-2 justify-end w-full pb-8">
                 <Image
