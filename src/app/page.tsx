@@ -5,15 +5,13 @@ import { useState } from "react";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import Loader from "@/components/Loader";
-import { ArrowDown, Download, icons } from "lucide-react";
-import Card from "@/components/Card";
+import { Download } from "lucide-react";
 const TajawalRegular = localFont({
   src: "../../public/fonts/Tajawal_Regular.ttf",
 });
 export default function Home() {
   const [skipped, setSkipped] = useState(false);
 
-  
   return (
     <main className="h-full flex flex-col gap-8 bg-[#0e1a2f] word-normal">
       <Loader />
@@ -35,30 +33,27 @@ export default function Home() {
             className="flex flex-col items-center justify-between gap-8 bg-[url('../../public/bgImage.png')] bg-center bg-contain bg-no-repeat p-8 cursor-pointer"
           >
             <div className="flex justify-center items-center">
-          
               <Image
-              src={"/arrow.png"}
-              alt="arrow"
-              height={128}
-              width={128}
-              className="tranform scale-x-[-1] h-[64px] w-[64px] md:h-[128px] md:w-[128px]"
+                src={"/arrow.png"}
+                alt="arrow"
+                height={128}
+                width={128}
+                className="tranform scale-x-[-1] h-[64px] w-[64px] md:h-[128px] md:w-[128px]"
               />
-              
-            <Image
-              className="object-contain object-center h-[128px] w-[128px] md:h-[256px] md:w-[256px]"
-              src={"/LandingLogo.png"}
-              alt="Harmony Logo"
-              height={256}
-              width={256}
-            
-            />
-             <Image
-              src={"/arrow.png"}
-              alt="arrow"
-              height={128}
-              width={128}
-              className="h-[64px] w-[64px] md:h-[128px] md:w-[128px]"
-              
+
+              <Image
+                className="object-contain object-center h-[128px] w-[128px] md:h-[256px] md:w-[256px]"
+                src={"/LandingLogo.png"}
+                alt="Harmony Logo"
+                height={256}
+                width={256}
+              />
+              <Image
+                src={"/arrow.png"}
+                alt="arrow"
+                height={128}
+                width={128}
+                className="h-[64px] w-[64px] md:h-[128px] md:w-[128px]"
               />
             </div>
             <p
@@ -108,7 +103,6 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col w-full gap-4 items-center">
-              
               <Image
                 src={"/blueLogo.png"}
                 alt="Harmony logo"
@@ -121,14 +115,11 @@ export default function Home() {
                   "text-2xl md:text-4xl text-center text-white font-semibold"
                 )}
               >
-                 لـ يكنّ حيث يُصنع الإبداع
+                لـ يكنّ حيث يُصنع الإبداع
               </p>
             </div>
           </section>
 
-         
-
-          
           <section className="container min-h-[200svh] flex flex-col items-center justify-evenly">
             <div className="flex flex-col gap-4 items-center">
               <p
@@ -209,7 +200,6 @@ export default function Home() {
                   width={96}
                 />
               </div>
-              
             </div>
           </section>
         </>
