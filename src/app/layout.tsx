@@ -48,21 +48,7 @@ export default function RootLayout({
               </div>
               <nav className="flex-1 px-4 py-8">
                 <ul className="text-end flex flex-col">
-                  <Link href="/">
-                    <SheetClose className="text-lg text-end hover:text-[#88795c] mb-4 py-6 h-full w-full">
-                      الرئيسية
-                    </SheetClose>
-                  </Link>
-                  <Link href="/about">
-                    <SheetClose className="text-lg text-end hover:text-[#88795c] mb-4 py-6 h-full w-full">
-                      تعرف علينا
-                    </SheetClose>
-                  </Link>
-                  <Link href="/services">
-                    <SheetClose className="text-lg text-end hover:text-[#88795c] mb-4 py-6 h-full w-full">
-                      خدماتنا
-                    </SheetClose>
-                  </Link>
+                 
                   <Link href="/contact">
                     <SheetClose className="text-lg text-end hover:text-[#88795c] mb-4 py-6 h-full w-full">
                       تواصل معنا
