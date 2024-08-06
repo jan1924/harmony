@@ -301,7 +301,7 @@ export default function Home() {
             القطاع
           </p>
         </div>
-        <Link href={"/services"}>
+        <Link href={"/contact"}>
           <div className="flex items-center gap-4">
             <p className="text-white text-lg">دعنا ننظم حدثك</p>
             <MoveLeft color="white" size={48} />
