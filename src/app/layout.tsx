@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/Navbar";
 import {
   Sheet,
   SheetClose,
@@ -53,7 +52,6 @@ export default function RootLayout({
                       الرئيسية
                     </SheetClose>
                   </Link>
-                
                   <Link href="/contact">
                     <SheetClose className="text-lg text-end hover:text-[#88795c] mb-4 py-6 h-full w-full">
                       تواصل معنا
