@@ -80,14 +80,7 @@ export default function Home() {
             className="flex flex-col items-center justify-between gap-8 bg-[url('../../public/bgImage.png')] bg-center bg-contain bg-no-repeat p-8 cursor-pointer"
           >
             <div className="flex justify-center items-center">
-              <Image
-                src={"/arrow.png"}
-                alt="arrow"
-                height={128}
-                width={128}
-                className="tranform scale-x-[-1] h-[64px] w-[64px] md:h-[128px] md:w-[128px]"
-              />
-
+              
               <Image
                 className="object-contain object-center h-[128px] w-[128px] md:h-[256px] md:w-[256px]"
                 src={"/LandingLogo.png"}
@@ -95,13 +88,7 @@ export default function Home() {
                 height={256}
                 width={256}
               />
-              <Image
-                src={"/arrow.png"}
-                alt="arrow"
-                height={128}
-                width={128}
-                className="h-[64px] w-[64px] md:h-[128px] md:w-[128px]"
-              />
+              
             </div>
             <p
               className={cn(
@@ -308,37 +295,7 @@ export default function Home() {
           </div>
         </Link>
       </section>
-      {/* <section className="bg-[#f3f2f0] bg-[url('../../public/bglogo.png')] bg-center bg-repeat-round [background-size:128px] md:[background-size:256px]">
-        <div className="container mx-auto relative flex flex-col gap-8 items-center justify-center text-right min-h-[300px] px-8 py-8">
-          <div className="flex justify-center items-center">
-            <p
-              className={cn(
-                TajawalRegular.className,
-                "text-2xl md:text-4xl text-center"
-              )}
-            >
-              تواصل معنا لنتحدث عن حدثك التالي
-            </p>
-          </div>
-          <div className="flex justify-evenly md:justify-center md:gap-32 items-center w-full">
-            <Image
-              className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-              src={"/mail.png"}
-              alt="Eye icon"
-              height={96}
-              width={96}
-            />{" "}
-            <Image
-              className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-              src={"/whatsapp.png"}
-              alt="Eye icon"
-              height={96}
-              width={96}
-            />
-          </div>
-        </div>
-      </section> */}
-
+      
      
   
       <section className="flex flex-col items-center bg-bottom [background-size:128px] md:[background-size:256px] [background-repeat:repeat-x]">
@@ -389,36 +346,7 @@ export default function Home() {
           </div>
         </Link>
       </section>
-      {/* <section className="bg-[#f3f2f0] bg-[url('../../public/bglogo.png')] bg-center bg-repeat-round [background-size:128px] md:[background-size:256px]">
-        <div className="container mx-auto relative flex flex-col gap-8 items-center justify-center text-right min-h-[300px] px-8 py-8">
-          <div className="flex justify-center items-center">
-            <p
-              className={cn(
-                TajawalRegular.className,
-                "text-2xl md:text-4xl text-center"
-              )}
-            >
-              تواصل معنا لنتحدث عن حدثك التالي
-            </p>
-          </div>
-          <div className="flex justify-evenly md:justify-center md:gap-32 items-center w-full">
-            <Image
-              className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-              src={"/mail.png"}
-              alt="Eye icon"
-              height={96}
-              width={96}
-            />{" "}
-            <Image
-              className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-              src={"/whatsapp.png"}
-              alt="Eye icon"
-              height={96}
-              width={96}
-            />
-          </div>
-        </div>
-      </section> */}
+     
 
           <section className="container min-h-[200svh] flex flex-col items-center justify-evenly">
             <div className="flex flex-col gap-4 items-center">
@@ -472,36 +400,7 @@ export default function Home() {
             </div>
           </section>
 
-          {/* <section className="bg-[#f3f2f0] bg-[url('../../public/bglogo.png')] bg-center bg-repeat-round [background-size:128px] md:[background-size:256px]">
-            <div className="container mx-auto relative flex flex-col gap-8 items-center justify-center text-right min-h-[300px] px-8 py-8">
-              <div className="flex justify-center items-center">
-                <p
-                  className={cn(
-                    TajawalRegular.className,
-                    "text-2xl md:text-4xl text-center"
-                  )}
-                >
-                  تواصل معنا لنتحدث عن حدثك التالي
-                </p>
-              </div>
-              <div className="flex justify-evenly md:justify-center md:gap-32 items-center w-full">
-                <Image
-                  className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/mail.png"}
-                  alt="Eye icon"
-                  height={96}
-                  width={96}
-                />{" "}
-                <Image
-                  className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
-                  src={"/whatsapp.png"}
-                  alt="Eye icon"
-                  height={96}
-                  width={96}
-                />
-              </div>
-            </div>
-          </section> */}
+          
         </>
       )}
     </main>
