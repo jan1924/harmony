@@ -110,7 +110,7 @@ export default function Home() {
                     "text-2xl md:text-4xl text-[#a08e6c] font-semibold"
                   )}
                 >
-                  هذا حناَ
+                  هذا حنّا
                 </p>
                 <div className="flex flex-col gap-4">
                   <p
@@ -129,7 +129,7 @@ export default function Home() {
                     )}
                   >
                     خبراتنا تصنع لك حدثا أكثر جمالا وابتكارا ، على أيدي شباب و شابات
-                    سعوديون لطالما كانت صناعة الفعاليات شغفهم الأول ، حتى 
+                    سعوديين لطالما كانت صناعة الفعاليات شغفهم الأول ، حتى 
                     تمكنوا اليوم من إطلاق HARMONY COMPANY
                   </p>
                 </div>
@@ -382,7 +382,7 @@ export default function Home() {
                     "text-[#a08e6c] [direction:rtl] z-10"
                   )}
                 >
-                لإبداعك نغمٌ يُصنع لك مع{" "}
+                لإبداعك نغمٌ يُصنع لك ,, مع{" "}
                   <span className="text-white">HARMONY</span>
                 </p>
                 <p
