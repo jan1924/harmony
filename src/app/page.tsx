@@ -202,7 +202,7 @@ export default function Home() {
                 >
                   إبداعنا ما تشوفه مرتين لأن التكرار ماله مكان في قاموسنا اللغوي
                   <br/>
-                  باختصار كل حدث نصنع له هوية خاصة تليق بجمهوره وصانعيه
+                  باختصار  كل حدث نصنع له هوية خاصة تليق بجمهوره وصانعيه
   
                 </p>
               </div>
@@ -225,25 +225,31 @@ export default function Home() {
                     width={96}
                   />
                 </div>
-                <p
+                <ul dir="rtl"
                   className={cn(
                     TajawalRegular.className,
-                    "text-white/90 tex md:text-xl md:pr-28"
+                    "text-white/90 tex md:text-xl md:pr-28 list-disc"
                   )}
                 >
+                  <li>
                   الجمال
-                  <br />
+                  </li>
+                  <li>
                   الإبتكار
-                  <br />
+                  </li>
+                  <li>
                   الابداع
-                  <br />
+                  </li>
+                  <li>
                   الجودة
-                  <br />
+                  </li>
+                  <li>
                   الاحترافية
-                </p>
+                  </li>
+                </ul>
               </div>
 
-              <div className="flex flex-col gap-2 w-full items-end">
+              <div className="flex flex-col gap-2 w-full items-end ">
                 <div className="flex gap-4 items-center">
                   <p
                     className={cn(
@@ -254,35 +260,42 @@ export default function Home() {
                     وأهدافنا أكبر
                   </p>
                   <Image
-                    className="h-[48px] w-[48px] md:h-[96px] md:w-[96px]"
+                    className="h-[48px] w-[48px] md:h-[96px] md:w-[96px] "
                     src={"/corr.png"}
                     alt="Eye icon"
                     height={96}
                     width={96}
                   />
                 </div>
-                <p
+                <ul dir="rtl"
                   className={cn(
                     TajawalRegular.className,
-                    "text-white/90 tex md:text-xl md:pr-28"
+                    "text-white/90 tex md:text-xl md:pr-28 list-disc "
                   )}
                 >
+                  <li>
                    إضافة فكرة إبداعية ومبتكرة تقدم الحدث بشكل فريد و
                   مميز
-                  <br />
+                  </li>
+                  <li>
                    صناعة لحظات أكثر جاذبية تترك أثرا في أذهان الحضور
                   مدى الحياة
-                  <br />
+                  </li>
+                  <li>
                    تنفيذ الحدث بجودة عالية تليق بجمهوره وصانعيه
-                  <br />
+                  </li>
+                  <li>
                    إخراج الحدث بصورة مشرفة تحاكي الفعاليات العالمية
-                  <br />
+                  </li>
+                  <li>
                    دعم قطاع صناعة الفعاليات والمؤتمرات والمعارض بما
                   يتوافق مع رؤية ٢٠٣٠
-                  <br/>
+                  </li>
+                  <li>
                   تمكين فرص عمل تليق بشباب وشابات
                   الوطن في هذا القطاع
-                </p>
+              </li>
+              </ul>
               </div>
               <Link href={"/contact"}>
                 <div className="flex items-center gap-4">
