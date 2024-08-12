@@ -382,7 +382,7 @@ export default function Home() {
                     "text-[#a08e6c] [direction:rtl] z-10"
                   )}
                 >
-                لإبداعك نغمٌ يُصنع مع{" "}
+                لإبداعك نغمٌ يُصنع لك مع{" "}
                   <span className="text-white">HARMONY</span>
                 </p>
                 <p
