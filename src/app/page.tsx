@@ -336,7 +336,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Link href={"/contact"}>
+              <Link href={"https://wa.me/qr/EHJAHIGJIXGNH1"}>
                 <div className="flex items-center gap-4">
                   <p className="text-white text-lg">اطلب خدمتك الان</p>
                   <MoveLeft color="white" size={48} />
