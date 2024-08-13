@@ -128,8 +128,8 @@ export default function Home() {
                       "text-white/90 md:text-xl [direction:rtl]"
                     )}
                   >
-                    خبراتنا تصنع لك حدثا أكثر جمالا وابتكارا ، على أيدي شباب و شابات
-                    سعوديين لطالما كانت صناعة الفعاليات شغفهم الأول ، حتى 
+                    خبراتنا تصنع لك حدثا أكثر جمالا وابتكارا ، على أيدي شباب و
+                    شابات سعوديين لطالما كانت صناعة الفعاليات شغفهم الأول ، حتى
                     تمكنوا اليوم من إطلاق HARMONY COMPANY
                   </p>
                 </div>
@@ -141,7 +141,6 @@ export default function Home() {
                   height={256}
                   width={256}
                 />
-                
               </div>
             </section>
 
@@ -201,9 +200,8 @@ export default function Home() {
                   )}
                 >
                   إبداعنا ما تشوفه مرتين لأن التكرار ماله مكان في قاموسنا اللغوي
-                  <br/>
-                  باختصار  كل حدث نصنع له هوية خاصة تليق بجمهوره وصانعيه
-  
+                  <br />
+                  باختصار كل حدث نصنع له هوية خاصة تليق بجمهوره وصانعيه
                 </p>
               </div>
 
@@ -225,27 +223,18 @@ export default function Home() {
                     width={96}
                   />
                 </div>
-                <ul dir="rtl"
+                <ul
+                  dir="rtl"
                   className={cn(
                     TajawalRegular.className,
                     "text-white/90 tex md:text-xl md:pr-28 list-disc"
                   )}
                 >
-                  <li>
-                  الجمال
-                  </li>
-                  <li>
-                  الإبتكار
-                  </li>
-                  <li>
-                  الابداع
-                  </li>
-                  <li>
-                  الجودة
-                  </li>
-                  <li>
-                  الاحترافية
-                  </li>
+                  <li>الجمال</li>
+                  <li>الإبتكار</li>
+                  <li>الابداع</li>
+                  <li>الجودة</li>
+                  <li>الاحترافية</li>
                 </ul>
               </div>
 
@@ -267,35 +256,27 @@ export default function Home() {
                     width={96}
                   />
                 </div>
-                <ul dir="rtl"
+                <ul
+                  dir="rtl"
                   className={cn(
                     TajawalRegular.className,
                     "text-white/90 tex md:text-xl md:pr-28 list-disc "
                   )}
                 >
                   <li>
-                   إضافة فكرة إبداعية ومبتكرة تقدم الحدث بشكل فريد و
-                  مميز
+                    إضافة فكرة إبداعية ومبتكرة تقدم الحدث بشكل فريد و مميز
                   </li>
                   <li>
-                   صناعة لحظات أكثر جاذبية تترك أثرا في أذهان الحضور
-                  مدى الحياة
+                    صناعة لحظات أكثر جاذبية تترك أثرا في أذهان الحضور مدى الحياة
                   </li>
+                  <li>تنفيذ الحدث بجودة عالية تليق بجمهوره وصانعيه</li>
+                  <li>إخراج الحدث بصورة مشرفة تحاكي الفعاليات العالمية</li>
                   <li>
-                   تنفيذ الحدث بجودة عالية تليق بجمهوره وصانعيه
+                    دعم قطاع صناعة الفعاليات والمؤتمرات والمعارض بما يتوافق مع
+                    رؤية ٢٠٣٠
                   </li>
-                  <li>
-                   إخراج الحدث بصورة مشرفة تحاكي الفعاليات العالمية
-                  </li>
-                  <li>
-                   دعم قطاع صناعة الفعاليات والمؤتمرات والمعارض بما
-                  يتوافق مع رؤية ٢٠٣٠
-                  </li>
-                  <li>
-                  تمكين فرص عمل تليق بشباب وشابات
-                  الوطن في هذا القطاع
-              </li>
-              </ul>
+                  <li>تمكين فرص عمل تليق بشباب وشابات الوطن في هذا القطاع</li>
+                </ul>
               </div>
               <Link href={"/contact"}>
                 <div className="flex items-center gap-4">
@@ -324,7 +305,7 @@ export default function Home() {
                       "text-2xl md:text-4xl text-[#a08e6c] font-semibold"
                     )}
                   >
-                     خدماتنا أفضل
+                    خدماتنا أفضل
                   </p>
                   <div className="flex flex-col gap-8 w-full">
                     <div
@@ -346,7 +327,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Link href={"https://wa.me/qr/EHJAHIGJIXGNH1"}>
+              <Link href={"https://wa.me/966535698498?text="}>
                 <div className="flex items-center gap-4">
                   <p className="text-white text-lg">اطلب خدمتك الان</p>
                   <MoveLeft color="white" size={48} />
@@ -364,10 +345,12 @@ export default function Home() {
                 >
                   حاب تتعرف علينا أكثر
                 </p>
-                <Download
-                  className="h-[96px] w-[96px] md:h-[128px] md:w-[128px]"
-                  color="white"
-                />
+                <a href="/Harmony%20Profile.pdf" download>
+                  <Download
+                    className="h-[96px] w-[96px] md:h-[128px] md:w-[128px]"
+                    color="white"
+                  />
+                </a>
               </div>
               <Image
                 src={"/logo.jpg"}
@@ -382,7 +365,7 @@ export default function Home() {
                     "text-[#a08e6c] [direction:rtl] z-10"
                   )}
                 >
-                لإبداعك نغمٌ يُصنع لك ,, مع{" "}
+                  لإبداعك نغمٌ يُصنع لك ,, مع{" "}
                   <span className="text-white">HARMONY</span>
                 </p>
                 <p
