@@ -379,7 +379,7 @@ export default function Home() {
                         download
                       >
                         <button className="border rounded-md w-full px-4 py-2 text-center bg-[#e6e6e6] hover:bg-[#e6e6e6]/80">
-                          الانجليزية
+                          English
                         </button>
                       </a>
                     </div>
