@@ -8,6 +8,12 @@ import Loader from "@/components/Loader";
 import { Download, MoveLeft } from "lucide-react";
 import Link from "next/link";
 import Card from "@/components/Card";
+import {
+  Dialog,
+  DialogContent,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 const TajawalRegular = localFont({
   src: "../../public/fonts/Tajawal_Regular.ttf",
 });
@@ -345,12 +351,40 @@ export default function Home() {
                 >
                   حاب تتعرف علينا أكثر
                 </p>
-                <a href="/Harmony%20Profile.pdf" download>
-                  <Download
-                    className="h-[96px] w-[96px] md:h-[128px] md:w-[128px]"
-                    color="white"
-                  />
-                </a>
+                <Dialog>
+                  <DialogTrigger>
+                    <Download
+                      className="h-[96px] w-[96px] md:h-[128px] md:w-[128px]"
+                      color="white"
+                    />
+                  </DialogTrigger>
+                  <DialogContent
+                    className={cn(TajawalRegular.className)}
+                    dir="rtl"
+                  >
+                    <DialogTitle>الرجاء اختيار اللغة</DialogTitle>
+                    <div className="flex gap-2">
+                      <a
+                        className="w-full"
+                        href="/HarmonyProfileArabic.pdf"
+                        download
+                      >
+                        <button className="border rounded-md w-full px-4 py-2 text-center bg-[#e6e6e6] hover:bg-[#e6e6e6]/80">
+                          العربية
+                        </button>
+                      </a>
+                      <a
+                        className="w-full"
+                        href="/HarmonyProfileEnglish.pdf"
+                        download
+                      >
+                        <button className="border rounded-md w-full px-4 py-2 text-center bg-[#e6e6e6] hover:bg-[#e6e6e6]/80">
+                          الانجليزية
+                        </button>
+                      </a>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </div>
               <Image
                 src={"/logo.jpg"}
