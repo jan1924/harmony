@@ -10,6 +10,7 @@ import {
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -63,6 +64,7 @@ export default function RootLayout({
           </SheetContent>
         </Sheet>
         {children}
+        <Toaster />
       </body>
     </html>
   );
