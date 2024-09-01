@@ -1,10 +1,17 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import localFont from "next/font/local";
+import ContactUsForm from "@/components/ContactUsForm";
+import { Metadata } from "next";
 
 const TajawalRegular = localFont({
   src: "../../../public/fonts/Tajawal_Regular.ttf",
 });
+
+export const metadata: Metadata = {
+  title: "Contact - Harmony",
+  description: "Contact Harmony",
+};
 
 const page = () => {
   return (
@@ -32,71 +39,7 @@ const page = () => {
             </p>
           </div>
 
-          <form
-            className={cn(
-              TajawalRegular.className,
-              "flex flex-col justify-between text-nowrap gap-4 text-lg"
-            )}
-            action=""
-          >
-            <div className="flex gap-4">
-              <input
-                className="bg-[#a08e6c] rounded-full px-4 [direction:rtl]"
-                type="text"
-              />
-              <label className="text-end w-1/3" htmlFor="name">
-                الأسم
-              </label>
-            </div>
-            <div className="flex gap-4">
-              <input
-                className="bg-[#a08e6c]  rounded-full px-4 [direction:rtl]"
-                type="text"
-              />
-              <label className="text-end w-1/3" htmlFor="name">
-                الجهة
-              </label>
-            </div>
-            <div className="flex gap-4">
-              <input
-                className="bg-[#a08e6c] rounded-full px-4 [direction:rtl]"
-                type="text"
-              />
-              <label className="text-end w-1/3" htmlFor="name">
-                نوع المشروع
-              </label>
-            </div>
-            <div className="flex gap-4">
-              <input
-                className="bg-[#a08e6c] rounded-full px-4 [direction:rtl]"
-                type="text"
-              />
-              <label className="text-end w-1/3" htmlFor="name">
-                الموضوع
-              </label>
-            </div>
-            <div className="flex gap-4">
-              <input
-                className="bg-[#a08e6c] rounded-full px-4 [direction:rtl]"
-                type="text"
-              />
-              <label className="text-end w-1/3" htmlFor="name">
-                رقم التواصل
-              </label>
-            </div>
-            <div className="flex gap-4">
-              <input
-                className="bg-[#a08e6c] rounded-full px-4 [direction:rtl]"
-                type="text"
-              />
-              <label className="text-end w-1/3" htmlFor="name">
-                البريد الإلكتروني
-              </label>
-            </div>
-            <button className="border border-[#f3f2f0] bg-[#a08e6c]  hover:bg-[#817357]  rounded-full">
-              إرسال
-            </button>
-          </form>
+          <ContactUsForm />
         </section>
       </main>
       <footer className="absolute bottom-0 w-full border-t border-gray-700 bg-[#0e1a2f] text-white/90 py-4 text-center">
